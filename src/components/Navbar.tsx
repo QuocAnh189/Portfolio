@@ -90,7 +90,7 @@ const Navbar = () => {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.1, delay: 0.3 }}
               >
-                <span className="text-textGreen">02.</span> Experience
+                <span className="text-textGreen">02.</span> Key Skills
               </motion.li>
             </Link>
             <Link
@@ -120,7 +120,10 @@ const Navbar = () => {
               </motion.li>
             </Link>
           </ul>
-          <a href="" target="_blank">
+          <a
+            href="https://drive.google.com/file/d/16kJw4N7huDgjKlQya82XGkaq2taIcVdw/view"
+            target="_blank"
+          >
             <motion.button
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
