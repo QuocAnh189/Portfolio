@@ -1,6 +1,5 @@
 //images
 import Image from "next/image";
-import { amazonImg } from "../../../public/assets";
 
 //icons
 import { AiOutlineYoutube } from "react-icons/ai";
@@ -15,6 +14,7 @@ interface Props {
   name: string;
   mainfeature: string[];
   technologies: string[];
+  link: string;
 }
 
 const Project = ({
@@ -24,6 +24,7 @@ const Project = ({
   description,
   mainfeature,
   technologies,
+  link,
 }: Props) => {
   return (
     <div className="w-full flex flex-col items-center justify-center gap-28 mt-10">
@@ -58,28 +59,24 @@ const Project = ({
             Feature Project
           </p>
           <h3 className="text-2xl font-bold">{name}</h3>
-          <p className="bg-[#112240] text-sm md:text-base p-2 md:p-6 rounded-md">
-            {/* An Amazon clone website for visualizing personalized Amazon website.
-            View your products, Add your account with
-            <span className="text-textGreen">O-auth</span> and then make the
-            purchage using <span className="text-textGreen">stripe</span>. */}
+          <p className="bg-[#112240] text-sm md:text-base p-2 md:p-6 rounded-md text-center">
             <span>{description}</span>
           </p>
           <ul className="text-xs md:text-sm font-titleFont tracking-wide flex gap-2 md:gap-5 justify-between text-textDark">
-            {technologies.map((technology) => (
-              <li>{technology}</li>
+            {technologies.map((technology, index) => (
+              <li key={index}>{technology}</li>
             ))}
           </ul>
           <div className="text-2xl flex gap-4">
             <a
-              href=""
+              href={link}
               target="_blank"
               className="hover:text-textGreen duration-300"
             >
               <TbBrandGithub />
             </a>
             <a
-              href=""
+              href="https://www.youtube.com/channel/UCab8oUhngzefFGNrusYY-UQ"
               target="_blank"
               className="hover:text-textGreen duration-300"
             >

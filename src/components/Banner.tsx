@@ -36,7 +36,7 @@ const Banner = () => {
           className="flex flex-col text-4xl lgl:text-5xl font-titleFont font-semibold"
         >
           Tran Phuoc Anh Quoc.
-          <span className="text-textDark mt-2 lgl:mt-4">
+          <span className="text-white mt-2 lgl:mt-4">
             I can build everything for the web
           </span>
         </motion.h1>
@@ -44,13 +44,13 @@ const Banner = () => {
           initial={{ y: 10, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.9 }}
-          className="text-base md:max-w-[650px] text-textDark font-medium"
+          className="text-base md:max-w-[650px] text-textDark font-medium text-justify"
         >
-          I am a web developer with over 1+ years of experience in Next in
-          University.I am a student 3rd at University Of Information Technology
-          I have a strong foundation in front-end & back-end development and am
-          skilled in creating user-friendly and responsive web applications
-          using React and its ecosystem.
+          I am a web developer with over 1+ years of experience in University.I
+          am a student 3rd at University Of Information Technology I have a
+          strong foundation in front-end & back-end development and am skilled
+          in creating user-friendly and responsive web applications using React
+          and its ecosystem.
           <a>
             <span className="text-textGreen inline-flex relative cursor-pointer overflow-x-hidden group">
               Learn more
@@ -58,7 +58,7 @@ const Banner = () => {
             </span>
           </a>
         </motion.p>
-        <a href="https://github.com/AnhQuoc189" target="_blank">
+        <a href="https://github.com/QuocAnh189" target="_blank">
           <motion.button
             initial={{ y: 10, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}

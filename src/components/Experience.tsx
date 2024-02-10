@@ -2,28 +2,28 @@ import { useState } from "react";
 
 //components
 import SectionTitle from "./SectionTitle";
-import ReactBD from "./works/ReactBD";
-import Google from "./works/Google";
-import Apple from "./works/Apple";
-import Splash from "./works/Splash";
-import Amazon from "./works/Amazon";
+import FrontEnd from "./works/FrontEnd";
+import BackEnd from "./works/BackEnd";
+import Database from "./works/Database";
+import Deploy from "./works/Deploy";
+import English from "./works/English";
 import clsx from "clsx";
 
 const defaultActiveItem = {
-  ReactBD: false,
-  Google: false,
-  Apple: false,
-  Splash: false,
-  Amazon: false,
+  FrontEnd: false,
+  BackEnd: false,
+  Database: false,
+  Deploy: false,
+  English: false,
 };
 
 const Experience = () => {
   const [activeItems, setActiveItems] = useState({
-    ReactBD: true,
-    Google: false,
-    Apple: false,
-    Splash: false,
-    Amazon: false,
+    FrontEnd: true,
+    BackEnd: false,
+    Database: false,
+    Deploy: false,
+    English: false,
   });
 
   const handleChangeActiveItem = (name: string) => {
@@ -35,60 +35,64 @@ const Experience = () => {
       id="experience"
       className="max-w-containerxs mx-auto py-10 lgl:py-24 px-4"
     >
-      <SectionTitle title="Where I have Worked" titleNo="02" />
+      <SectionTitle title="Some skills I have" titleNo="02" />
       <div className="w-full mt-10 flex flex-col md:flex-row gap-16">
         <ul className="md:w-32 flex flex-col">
           <li
-            onClick={() => handleChangeActiveItem("ReactBD")}
+            onClick={() => handleChangeActiveItem("FrontEnd")}
             className={clsx(
-              `border-l-2  text-textDark bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`,
-              activeItems.ReactBD ? "border-l-textGreen" : "border-l-hoverColor"
+              `border-l-2  text-textDark bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-4 font-medium`,
+              activeItems.FrontEnd
+                ? "border-l-textGreen"
+                : "border-l-hoverColor"
             )}
           >
-            ReactBD
+            Front-End
           </li>
           <li
-            onClick={() => handleChangeActiveItem("Google")}
+            onClick={() => handleChangeActiveItem("BackEnd")}
             className={clsx(
-              `border-l-2  text-textDark bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`,
-              activeItems.Google ? "border-l-textGreen" : "border-l-hoverColor"
+              `border-l-2  text-textDark bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-4 font-medium`,
+              activeItems.BackEnd ? "border-l-textGreen" : "border-l-hoverColor"
             )}
           >
-            Google
+            Back-End
           </li>
           <li
-            onClick={() => handleChangeActiveItem("Apple")}
+            onClick={() => handleChangeActiveItem("Database")}
             className={clsx(
-              `border-l-2  text-textDark bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`,
-              activeItems.Apple ? "border-l-textGreen" : "border-l-hoverColor"
+              `border-l-2  text-textDark bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-4 font-medium`,
+              activeItems.Database
+                ? "border-l-textGreen"
+                : "border-l-hoverColor"
             )}
           >
-            Apple
+            Database
           </li>
           <li
-            onClick={() => handleChangeActiveItem("Splash")}
+            onClick={() => handleChangeActiveItem("Deploy")}
             className={clsx(
-              `border-l-2  text-textDark bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`,
-              activeItems.Splash ? "border-l-textGreen" : "border-l-hoverColor"
+              `border-l-2  text-textDark bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-4 font-medium`,
+              activeItems.Deploy ? "border-l-textGreen" : "border-l-hoverColor"
             )}
           >
-            Splash
+            Deploy
           </li>
           <li
-            onClick={() => handleChangeActiveItem("Amazon")}
+            onClick={() => handleChangeActiveItem("English")}
             className={clsx(
-              `border-l-2  text-textDark bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-8 font-medium`,
-              activeItems.Amazon ? "border-l-textGreen" : "border-l-hoverColor"
+              `border-l-2  text-textDark bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-4 font-medium`,
+              activeItems.English ? "border-l-textGreen" : "border-l-hoverColor"
             )}
           >
-            Amazon
+            English
           </li>
         </ul>
-        {activeItems.ReactBD && <ReactBD />}
-        {activeItems.Google && <Google />}
-        {activeItems.Apple && <Apple />}
-        {activeItems.Splash && <Splash />}
-        {activeItems.Amazon && <Amazon />}
+        {activeItems.FrontEnd && <FrontEnd />}
+        {activeItems.BackEnd && <BackEnd />}
+        {activeItems.Database && <Database />}
+        {activeItems.Deploy && <Deploy />}
+        {activeItems.English && <English />}
       </div>
     </section>
   );

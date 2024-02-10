@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { TiArrowForward } from "react-icons/ti";
 
-const Amazon = () => {
+const FrontEnd = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -10,40 +10,34 @@ const Amazon = () => {
       className="w-full"
     >
       <h3 className="flex gap-1 font-medium text-xl font-titleFont">
-        web Design
-        <span className="text-textGreen tracking-wide">@Amazon</span>
+        Engineer <span className="text-textGreen tracking-wide">@FrontEnd</span>
       </h3>
-      <p className="text-sm mt-1 font-medium text-textDark">
-        Jan 2022 - Dec 2023
-      </p>
+      <p className="text-sm mt-1 font-medium text-textDark">Current</p>
       <ul className="mt-6 flex flex-col gap-3">
         <li className="text-base flex gap-2 text-textDark">
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-          distinctio doloribus quas ex ea sed.
+          I can build website interfaces with html5, css or JavaScript libraries
+          (React,Next.js).
         </li>
         <li className="text-base flex gap-2 text-textDark">
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio
-          sit adipisci ad exercitationem a amet cum porro recusandae eveniet,
-          accusantium animi tenetur rerum, culpa quibusdam! Consectetur
-          laboriosam hic harum modi.
+          I can build API from Front-End to Back-End with RTK-Query , React
+          Query.
         </li>
         <li className="text-base flex gap-2 text-textDark">
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam et
-          corporis necessitatibus? Pariatur voluptas ad, at et hic deserunt
-          sequi?
+          On the other hand , I use interface building libraries like Tailwind ,
+          Chakra ,... and Responsive Website.
         </li>
       </ul>
     </motion.div>
   );
 };
 
-export default Amazon;
+export default FrontEnd;

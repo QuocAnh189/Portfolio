@@ -20,40 +20,40 @@ const Archive = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 mt-10 lgl:px-10">
         <ArchiveCard
-          title="Educare Engligh Learning Academy"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            laudantium velit qui sint non, voluptates quo a veritatis."
+          title="Food Order"
+          description="An online food ordering system enabling users to easily select and order from pizza restaurants."
           listItem={["NextJs", "Taildwind CSS", "Redux Toolkit"]}
+          link="https://github.com/QuocAnh189/FoodOrder_FE"
         />
         <ArchiveCard
-          title="Educare Engligh Learning Academy"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            laudantium velit qui sint non, voluptates quo a veritatis."
-          listItem={["NextJs", "Taildwind CSS", "React-Query"]}
+          title="Quizzes_Mobile"
+          description="A mobile application allowing creation and participation in diverse and engaging quiz games."
+          listItem={["ReactNative", "MongoDB", "Redux Toolkit"]}
+          link="https://github.com/QuocAnh189/EzQuiz-mobile"
         />
         <ArchiveCard
-          title="Educare Engligh Learning Academy"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            laudantium velit qui sint non, voluptates quo a veritatis."
-          listItem={["NextJs", "Taildwind CSS", "Transformer"]}
+          title="SOLID Basic"
+          description="A project for learning fundamental SOLID principles in software development to create maintainable and scalable code"
+          listItem={["Java"]}
+          link="https://github.com/QuocAnh189/Solid_Basic"
         />
         <ArchiveCard
-          title="Educare Engligh Learning Academy"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            laudantium velit qui sint non, voluptates quo a veritatis."
+          title="Discord"
+          description="A flexible and powerful community chat and communication platform serving needs from individuals to businesses"
           listItem={["NextJs", "Taildwind CSS", "Socket-IO"]}
+          link="https://github.com/QuocAnh189/Discord_Clone"
         />
         <ArchiveCard
-          title="Educare Engligh Learning Academy"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            laudantium velit qui sint non, voluptates quo a veritatis."
+          title="Blog"
+          description="A versatile and user-friendly blogging platform for sharing information and experiences."
           listItem={["NextJs", "Taildwind CSS", "Redux-Toolkit"]}
+          link="https://github.com/QuocAnh189/Blog"
         />
         <ArchiveCard
-          title="Educare Engligh Learning Academy"
-          description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            laudantium velit qui sint non, voluptates quo a veritatis."
-          listItem={["NextJs", "Taildwind CSS", "Redux-Toolkit"]}
+          title="Even Hub"
+          description="A flexible and efficient event management and scheduling system for organizations of all sizes."
+          listItem={["ReactNative", "MongoDB", "Redux-Toolkit"]}
+          link="https://github.com/QuocAnh189/EvenHub_Mobile_FE"
         />
         {showMore && (
           <>
@@ -63,10 +63,10 @@ const Archive = () => {
               transition={{ delay: 0.1 }}
             >
               <ArchiveCard
-                title="Educare Engligh Learning Academy"
-                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            laudantium velit qui sint non, voluptates quo a veritatis."
-                listItem={["Reactjs", "Taildwind CSS", "getform.io"]}
+                title="SQL"
+                description="A project focusing on managing databases and flexible data querying to serve the needs of complex applications and systems."
+                listItem={["SQL syntax"]}
+                link="https://github.com/QuocAnh189/Learn_SQL"
               />
             </motion.div>
             <motion.div
@@ -75,10 +75,10 @@ const Archive = () => {
               transition={{ delay: 0.2 }}
             >
               <ArchiveCard
-                title="Educare Engligh Learning Academy"
-                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            laudantium velit qui sint non, voluptates quo a veritatis."
-                listItem={["Reactjs", "Taildwind CSS", "getform.io"]}
+                title="Data Structure Algorithms"
+                description="Researching, designing, and implementing data structures and algorithms to solve real-world problems.  "
+                listItem={["C++", "OOP"]}
+                link="https://github.com/QuocAnh189/Data_Structure_Algorithsm"
               />
             </motion.div>
             <motion.div
@@ -87,10 +87,10 @@ const Archive = () => {
               transition={{ delay: 0.3 }}
             >
               <ArchiveCard
-                title="Educare Engligh Learning Academy"
-                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-            laudantium velit qui sint non, voluptates quo a veritatis."
-                listItem={["Reactjs", "Taildwind CSS", "getform.io"]}
+                title="Search Algorithms"
+                description="Optimizing search algorithms to improve performance and accuracy in information retrieval across platforms."
+                listItem={["C++", "Search"]}
+                link="https://github.com/QuocAnh189/Search_algorithms"
               />
             </motion.div>
           </>

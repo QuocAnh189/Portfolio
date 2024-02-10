@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-
 //components
 import Navbar from "src/components/Navbar";
 import LeftSide from "src/components/LeftSide";
