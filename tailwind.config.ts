@@ -12,7 +12,7 @@ const config: Config = {
         container: "1440px",
         contentContainer: "1140px",
         containerSmall: "1024px",
-        containerxs: "768px",
+        containerXs: "768px",
       },
 
       screens: {
@@ -46,8 +46,7 @@ const config: Config = {
       colors: {
         bodyColor: "#0A192F",
         textGreen: "#64ffda",
-        // textGreen: "#9400FF",
-        textLight: "#ccd6f6", 
+        textLight: "#ccd6f6",
         textDark: "#8892b0",
         hoverColor: "rgba(100,255,218,0.1)",
       },

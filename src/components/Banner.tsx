@@ -47,10 +47,10 @@ const Banner = () => {
           className="text-base md:max-w-[650px] text-textDark font-medium text-justify"
         >
           I am a web developer with over 1+ years of experience in University.I
-          am a student 3rd at University Of Information Technology I have a
+          am a student 3rd at University Of Information Technology. I have a
           strong foundation in front-end & back-end development and am skilled
           in creating user-friendly and responsive web applications using React
-          and its ecosystem.
+          and its ecosystem.{" "}
           <a>
             <span className="text-textGreen inline-flex relative cursor-pointer overflow-x-hidden group">
               Learn more
@@ -63,7 +63,7 @@ const Banner = () => {
             initial={{ y: 10, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 1 }}
-            className="w-52 h-14 text-sm font-titleFont  border border-textGreen rounded-md text-textGreen   hover:bg-hoverColor duration-300"
+            className="px-6 py-4 text-sm font-titleFont border border-textGreen rounded-md text-textGreen hover:bg-hoverColor duration-300"
           >
             Check out my Project
           </motion.button>

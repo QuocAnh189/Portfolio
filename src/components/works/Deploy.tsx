@@ -22,13 +22,14 @@ const Deploy = () => {
           <span className="font-bold text-white">
             Vercel, Render, Microsoft
           </span>
+          .
         </li>
         <li className="text-base flex gap-2 text-textDark">
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
           I know basic about{" "}
-          <span className="font-bold text-white">Docker</span>
+          <span className="font-bold text-white">Docker</span>.
         </li>
       </ul>
     </motion.div>

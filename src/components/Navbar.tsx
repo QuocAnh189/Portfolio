@@ -81,7 +81,7 @@ const Navbar = () => {
               </motion.li>
             </Link>
             <Link
-              href={"#experience"}
+              href={"#skill"}
               onClick={handleScroll}
               className="flex items-center font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link"
             >
@@ -120,7 +120,7 @@ const Navbar = () => {
               </motion.li>
             </Link>
           </ul>
-          <a
+          <Link
             href="https://drive.google.com/file/d/16kJw4N7huDgjKlQya82XGkaq2taIcVdw/view"
             target="_blank"
           >
@@ -128,11 +128,11 @@ const Navbar = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6 }}
-              className="px-4 py-2 rounded-sm text-textGreen text-[13px] border border-textGreen hover:bg-hoverColor duration-300"
+              className="px-4 py-2 rounded-sm text-textGreen text-sm border border-textGreen hover:bg-hoverColor duration-300"
             >
               Resume
             </motion.button>
-          </a>
+          </Link>
         </div>
         {/* Small Icon section */}
         <div

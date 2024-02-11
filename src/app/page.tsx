@@ -6,7 +6,7 @@ import LeftSide from "src/components/LeftSide";
 import RightSide from "src/components/RightSide";
 import Banner from "src/components/Banner";
 import About from "src/components/About";
-import Experience from "src/components/Experience";
+import Experience from "src/components/Skill";
 import Projects from "src/components/Projects";
 import Archive from "src/components/Archive";
 import Contact from "src/components/Contact";

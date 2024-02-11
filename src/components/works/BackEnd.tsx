@@ -20,13 +20,13 @@ const BackEnd = () => {
             <TiArrowForward />
           </span>
           I often use object-oriented methods to build Back-End systems with
-          Node.js
+          Node.js.
         </li>
         <li className="text-base flex gap-2 text-textDark">
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          I can Build Backend API function base on product requirement
+          I can Build Backend API function base on product requirement.
         </li>
       </ul>
     </motion.div>

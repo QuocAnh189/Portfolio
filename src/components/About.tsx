@@ -3,6 +3,7 @@ import SectionTitle from "./SectionTitle";
 import { AiFillThunderbolt } from "react-icons/ai";
 
 import Image from "next/image";
+import { useState } from "react";
 
 const technologies = [
   "JavaScript (ES6+)",
@@ -18,12 +19,14 @@ const technologies = [
 ];
 
 const About = () => {
+  const [modalImage, setModalImage] = useState<boolean>(false);
+
   return (
     <section
       id="about"
       className="max-w-containerSmall mx-auto py-10 lgl:py-32 flex flex-col gap-8"
     >
-      <SectionTitle title="About Me" titleNo="01" />
+      <SectionTitle titleNo="01" title="About Me" />
       <div className="flex flex-col lgl:flex-row gap-16">
         <div className="w-full lgl:w-2/3 text-base text-textDark font-medium flex flex-col gap-4 text-justify">
           <p>
@@ -58,15 +61,31 @@ const About = () => {
           <div className="absolute w-full h-80 -left-6 -top-6 rounded-lg">
             <div className="w-full h-full relative z-20 flex pl-6 lgl:pl-0">
               <Image
-                className="rounded-lg h-full object-cover"
+                onClick={() => setModalImage(!modalImage)}
+                data-toggle="modal"
+                className="hover:cursor-pointer rounded-lg h-full object-cover"
                 src={avatar}
                 alt="profileImg"
               />
             </div>
           </div>
-          <div className="hidden lgl:inline-block absolute w-full h-80 bg-textGreen/20 rounded-md top-0 left-0 group-hover:bg-transparent duration-300"></div>
+          <div className="hidden lgl:inline-block absolute w-full h-80 bg-textGreen/20 rounded-md top-0 left-0 group-hover:bg-transparent duration-300" />
         </div>
       </div>
+      {modalImage && (
+        <div className="absolute flex items-center justify-center top-0 left-0 right-0 bottom-0 z-50 p-10">
+          <div
+            className="absolute z-[-1] w-full h-full bg-slate-500 opacity-70"
+            onClick={() => setModalImage(!modalImage)}
+          ></div>
+          <Image
+            data-toggle="modal"
+            className="rounded-lg w-[600px] object-cover"
+            src={avatar}
+            alt="profileImg"
+          />
+        </div>
+      )}
     </section>
   );
 };

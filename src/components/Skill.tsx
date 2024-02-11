@@ -7,6 +7,8 @@ import BackEnd from "./works/BackEnd";
 import Database from "./works/Database";
 import Deploy from "./works/Deploy";
 import English from "./works/English";
+
+//clsx
 import clsx from "clsx";
 
 const defaultActiveItem = {
@@ -32,8 +34,8 @@ const Experience = () => {
 
   return (
     <section
-      id="experience"
-      className="max-w-containerxs mx-auto py-10 lgl:py-24 px-4"
+      id="skill"
+      className="max-w-containerXs mx-auto py-10 lgl:py-24 px-4"
     >
       <SectionTitle title="Some skills I have" titleNo="02" />
       <div className="w-full mt-10 flex flex-col md:flex-row gap-16">
@@ -43,7 +45,7 @@ const Experience = () => {
             className={clsx(
               `border-l-2  text-textDark bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-4 font-medium`,
               activeItems.FrontEnd
-                ? "border-l-textGreen"
+                ? "border-l-textGreen text-textGreen"
                 : "border-l-hoverColor"
             )}
           >
@@ -53,7 +55,9 @@ const Experience = () => {
             onClick={() => handleChangeActiveItem("BackEnd")}
             className={clsx(
               `border-l-2  text-textDark bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-4 font-medium`,
-              activeItems.BackEnd ? "border-l-textGreen" : "border-l-hoverColor"
+              activeItems.BackEnd
+                ? "border-l-textGreen text-textGreen"
+                : "border-l-hoverColor"
             )}
           >
             Back-End
@@ -63,7 +67,7 @@ const Experience = () => {
             className={clsx(
               `border-l-2  text-textDark bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-4 font-medium`,
               activeItems.Database
-                ? "border-l-textGreen"
+                ? "border-l-textGreen text-textGreen"
                 : "border-l-hoverColor"
             )}
           >
@@ -73,7 +77,9 @@ const Experience = () => {
             onClick={() => handleChangeActiveItem("Deploy")}
             className={clsx(
               `border-l-2  text-textDark bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-4 font-medium`,
-              activeItems.Deploy ? "border-l-textGreen" : "border-l-hoverColor"
+              activeItems.Deploy
+                ? "border-l-textGreen text-textGreen"
+                : "border-l-hoverColor"
             )}
           >
             Deploy
@@ -82,7 +88,9 @@ const Experience = () => {
             onClick={() => handleChangeActiveItem("English")}
             className={clsx(
               `border-l-2  text-textDark bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-4 font-medium`,
-              activeItems.English ? "border-l-textGreen" : "border-l-hoverColor"
+              activeItems.English
+                ? "border-l-textGreen text-textGreen"
+                : "border-l-hoverColor"
             )}
           >
             English

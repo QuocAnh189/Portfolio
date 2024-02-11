@@ -22,7 +22,7 @@ const Archive = () => {
         <ArchiveCard
           title="Food Order"
           description="An online food ordering system enabling users to easily select and order from pizza restaurants."
-          listItem={["NextJs", "Taildwind CSS", "Redux Toolkit"]}
+          listItem={["Next.js", "Taildwind CSS", "Redux Toolkit"]}
           link="https://github.com/QuocAnh189/FoodOrder_FE"
         />
         <ArchiveCard
@@ -40,13 +40,13 @@ const Archive = () => {
         <ArchiveCard
           title="Discord"
           description="A flexible and powerful community chat and communication platform serving needs from individuals to businesses"
-          listItem={["NextJs", "Taildwind CSS", "Socket-IO"]}
+          listItem={["Next.js", "Taildwind CSS", "Socket-IO"]}
           link="https://github.com/QuocAnh189/Discord_Clone"
         />
         <ArchiveCard
           title="Blog"
           description="A versatile and user-friendly blogging platform for sharing information and experiences."
-          listItem={["NextJs", "Taildwind CSS", "Redux-Toolkit"]}
+          listItem={["Next.js", "Taildwind CSS", "Redux-Toolkit"]}
           link="https://github.com/QuocAnh189/Blog"
         />
         <ArchiveCard

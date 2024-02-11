@@ -19,7 +19,7 @@ const FrontEnd = () => {
             <TiArrowForward />
           </span>
           I can build website interfaces with html5, css or JavaScript libraries
-          (React,Next.js).
+          (React, Next.js).
         </li>
         <li className="text-base flex gap-2 text-textDark">
           <span className="text-textGreen mt-1">
