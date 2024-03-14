@@ -3,7 +3,9 @@ import SectionTitle from "./SectionTitle";
 import Project from "./projects/Project";
 
 //image
-import { quizzesImg, footballImg, organicImg } from "../../public/assets";
+import quizzesApp from "src/assets/images/quizzes.png";
+import footballApp from "src/assets/images/football.png";
+import organicApp from "src/assets/images/organic.png";
 
 const Projects = () => {
   return (
@@ -12,7 +14,7 @@ const Projects = () => {
       <div className="w-full flex flex-col items-center justify-between gap-28 mt-10">
         <Project
           right={true}
-          image={quizzesImg}
+          image={quizzesApp}
           name="Quizzes App for Website"
           description="Engage users with diverse quiz games online, offering entertainment and educational challenges across various topics and interests."
           mainfeature={["O-auth", "stripe"]}
@@ -28,7 +30,7 @@ const Projects = () => {
 
         <Project
           right={false}
-          image={footballImg}
+          image={footballApp}
           name="Soccer Championship Management"
           description="Efficiently organize and manage soccer tournaments, from club to national levels, handling schedules, results, team information, tickets, and marketing"
           mainfeature={["O-auth", "stripe"]}
@@ -44,7 +46,7 @@ const Projects = () => {
 
         <Project
           right={true}
-          image={organicImg}
+          image={organicApp}
           name="Website Organic Food"
           description="Conveniently buy high-quality organic food online, with detailed product information, promoting healthy and sustainable lifestyles while supporting local producers and suppliers"
           mainfeature={["O-auth", "stripe"]}

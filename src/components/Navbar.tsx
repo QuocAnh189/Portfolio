@@ -1,26 +1,19 @@
 "use client";
 
 import React, { useRef, useState } from "react";
+
+//next
 import Image from "next/image";
 import Link from "next/link";
-
-//image
-import { logo } from "../../public/assets";
-
-//icons
-import { AiOutlineClose } from "react-icons/ai";
-import { TbBrandGithub } from "react-icons/tb";
-import {
-  SlSocialYoutube,
-  SlSocialLinkedin,
-  SlSocialFacebook,
-  SlSocialInstagram,
-} from "react-icons/sl";
 
 //animation
 import { motion } from "framer-motion";
 
+//component
 import Menu from "./Menu";
+
+//image
+import logo from "src/assets/images/logo.png";
 
 const Navbar = () => {
   const ref = useRef<string | any>("");
@@ -50,7 +43,13 @@ const Navbar = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <Image className="w-14" src={logo} alt="logo" />
+          <Image
+            width={60}
+            height={60}
+            // className="w-14"
+            src={logo}
+            alt="logo"
+          />
         </motion.div>
         <div className="hidden md:inline-flex items-center gap-7">
           <ul className="flex text-[18px] gap-7">

@@ -41,7 +41,9 @@ const Project = ({
         >
           <div>
             <Image
-              className="w-full h-full object-contain"
+              width={800}
+              height={0}
+              className="object-contain"
               src={image}
               alt="amazonImg"
             />

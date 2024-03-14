@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import "animate.css";
 
 //images
-import { logoBanner } from "../../public/assets";
+import logoBanner from "src/assets/images/logoBanner.svg";
 import Image from "next/image";
 
 const Banner = () => {
@@ -75,7 +75,7 @@ const Banner = () => {
         transition={{ duration: 0.5, delay: 1.1 }}
         className="animate__animated animate-pulse"
       >
-        <Image src={logoBanner} alt="logoBanner" />
+        <Image width={0} height={0} src={logoBanner} alt="logoBanner" />
       </motion.div>
     </section>
   );

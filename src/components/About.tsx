@@ -1,9 +1,16 @@
-import { avatar } from "../../public/assets";
+import { useState } from "react";
+
+//next
+import Image from "next/image";
+
+//component
 import SectionTitle from "./SectionTitle";
+
+//icon
 import { AiFillThunderbolt } from "react-icons/ai";
 
-import Image from "next/image";
-import { useState } from "react";
+//image
+import avatar from "src/assets/images/avatar.png";
 
 const technologies = [
   "JavaScript (ES6+)",
@@ -61,6 +68,8 @@ const About = () => {
           <div className="absolute w-full h-80 -left-6 -top-6 rounded-lg">
             <div className="w-full h-full relative z-20 flex pl-6 lgl:pl-0">
               <Image
+                width={400}
+                height={200}
                 onClick={() => setModalImage(!modalImage)}
                 data-toggle="modal"
                 className="hover:cursor-pointer rounded-lg h-full object-cover"
@@ -79,6 +88,8 @@ const About = () => {
             onClick={() => setModalImage(!modalImage)}
           ></div>
           <Image
+            width={400}
+            height={200}
             data-toggle="modal"
             className="rounded-lg w-[600px] object-cover"
             src={avatar}
