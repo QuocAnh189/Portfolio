@@ -43,13 +43,7 @@ const Navbar = () => {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <Image
-            width={60}
-            height={60}
-            // className="w-14"
-            src={logo}
-            alt="logo"
-          />
+          <Image width={60} height={60} src={logo} alt="logo" />
         </motion.div>
         <div className="hidden md:inline-flex items-center gap-7">
           <ul className="flex text-[18px] gap-7">
@@ -120,7 +114,7 @@ const Navbar = () => {
             </Link>
           </ul>
           <Link
-            href="https://drive.google.com/file/d/16kJw4N7huDgjKlQya82XGkaq2taIcVdw/view"
+            href="https://drive.google.com/file/d/1ZUaJ0q54fzBrE6afSOB8g2E7t5LT_lsx/preview"
             target="_blank"
           >
             <motion.button

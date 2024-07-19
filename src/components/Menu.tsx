@@ -100,7 +100,10 @@ const Menu = ({ handleScroll, setShowMenu }: Props) => {
               </motion.li>
             </Link>
           </ul>
-          <a href="" target="_blank">
+          <a
+            href="https://drive.google.com/file/d/1ZUaJ0q54fzBrE6afSOB8g2E7t5LT_lsx/view"
+            target="_blank"
+          >
             <motion.button
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
