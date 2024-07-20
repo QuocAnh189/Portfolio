@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 
 const Archive = () => {
   const [showMore, setShowMore] = useState(false);
+
   return (
     <div className="max-w-contentContainer mx-auto px-4 p-24">
       <div className="w-full flex flex-col items-center">

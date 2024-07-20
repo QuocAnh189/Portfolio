@@ -15,6 +15,7 @@ interface Props {
   mainfeature: string[];
   technologies: string[];
   link: string;
+  demo: string;
 }
 
 const Project = ({
@@ -25,6 +26,7 @@ const Project = ({
   mainfeature,
   technologies,
   link,
+  demo,
 }: Props) => {
   return (
     <div className="w-full flex flex-col items-center justify-center gap-28 mt-10">
@@ -35,7 +37,7 @@ const Project = ({
         )}
       >
         <a
-          href=""
+          href={demo}
           target="_blank"
           className="w-full xl:w-1/2 h-auto relative group"
         >
@@ -85,7 +87,7 @@ const Project = ({
               <AiOutlineYoutube />
             </a>
             <a
-              href=""
+              href={demo}
               target="_blank"
               className="hover:text-textGreen duration-300"
             >

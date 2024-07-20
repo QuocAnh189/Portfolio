@@ -16,13 +16,15 @@ const technologies = [
   "JavaScript (ES6+)",
   "React",
   "TypeScript",
+  "PHP",
   "MongoDB",
   "Redux Toolkit",
   "Next.js",
   "Node.js",
   "Express.js",
-  "Taildwindcss",
+  "Tailwinds",
   "Bootstrap",
+  "Phalcon",
 ];
 
 const About = () => {
@@ -48,8 +50,8 @@ const About = () => {
             front-end engineer but also back-end engineer.
             <span className="text-textGreen">
               {" "}
-              Strong skills in HTML, CSS, Javascript, Typescript and ReactJS,
-              Next.js , React Native.
+              Key skills in HTML, CSS, PHP, Javascript, Typescript and React,
+              Next.js , Node.js, Phalcon .
             </span>
           </p>
           <p>Here are a few technologies I have been working with recently:</p>

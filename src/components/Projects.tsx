@@ -3,7 +3,7 @@ import SectionTitle from "./SectionTitle";
 import Project from "./projects/Project";
 
 //image
-import quizzesApp from "src/assets/images/quizzes.png";
+import quizzesApp from "src/assets/images/eventhub.png";
 import footballApp from "src/assets/images/football.png";
 import organicApp from "src/assets/images/organic.png";
 
@@ -15,17 +15,18 @@ const Projects = () => {
         <Project
           right={true}
           image={quizzesApp}
-          name="Quizzes App for Website"
-          description="Engage users with diverse quiz games online, offering entertainment and educational challenges across various topics and interests."
+          name="Event Hub for Website"
+          description="This project use ASP.NET for Back-End and React for Front-End to build event management and ticketing"
           mainfeature={["O-auth", "stripe"]}
           technologies={[
-            "Next.js",
+            "React",
             "TypeScript",
-            "Node.js",
-            "Mongo DB",
+            "ASP.NET",
+            "MY SQL",
             "Redux Toolkit",
           ]}
-          link="https://github.com/QuocAnh189/Quizzes_FE"
+          link="https://github.com/QuocAnh189/EventHub_Mobile_FE"
+          demo="https://eventhubsolution.vercel.app"
         />
 
         <Project
@@ -42,6 +43,7 @@ const Projects = () => {
             "React-Query",
           ]}
           link="https://github.com/QuocAnh189/SoccerManagement_FE"
+          demo="https://footballmanagement.vercel.app"
         />
 
         <Project
@@ -58,6 +60,7 @@ const Projects = () => {
             "Redux Toolkit",
           ]}
           link="https://github.com/QuocAnh189/OrganicFood_FE"
+          demo="https://organicfoodfe.vercel.app/contact"
         />
       </div>
     </section>

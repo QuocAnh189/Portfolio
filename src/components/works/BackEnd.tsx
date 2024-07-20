@@ -2,6 +2,13 @@ import { motion } from "framer-motion";
 import { TiArrowForward } from "react-icons/ti";
 
 const BackEnd = () => {
+  const skills = [
+    "SOLID Principles, Design Patterns.",
+    "I can build Backend API function base on product requirement.",
+    "ABAC, RBAC authorization",
+    "Clean Architecture",
+  ];
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -15,19 +22,17 @@ const BackEnd = () => {
       </h3>
       <p className="text-sm mt-1 font-medium text-textDark">Current</p>
       <ul className="mt-6 flex flex-col gap-3">
-        <li className="text-base flex gap-2 text-textDark">
-          <span className="text-textGreen mt-1">
-            <TiArrowForward />
-          </span>
-          I often use object-oriented methods to build Back-End systems with
-          Node.js.
-        </li>
-        <li className="text-base flex gap-2 text-textDark">
-          <span className="text-textGreen mt-1">
-            <TiArrowForward />
-          </span>
-          I can Build Backend API function base on product requirement.
-        </li>
+        {skills.map((skill: string, index: number) => (
+          <li
+            key={`skill-${index}`}
+            className="text-base flex gap-2 text-textDark"
+          >
+            <span className="text-textGreen mt-1">
+              <TiArrowForward />
+            </span>
+            {skill}
+          </li>
+        ))}
       </ul>
     </motion.div>
   );

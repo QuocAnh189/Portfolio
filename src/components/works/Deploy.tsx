@@ -19,17 +19,14 @@ const Deploy = () => {
             <TiArrowForward />
           </span>
           I have experience in implementing projects with{" "}
-          <span className="font-bold text-white">
-            Vercel, Render, Microsoft
-          </span>
-          .
+          <span className="font-bold text-white">Azure</span>.
         </li>
         <li className="text-base flex gap-2 text-textDark">
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          I know basic about{" "}
-          <span className="font-bold text-white">Docker</span>.
+          I know about{" "}
+          <span className="font-bold text-white">Nginx, Docker service</span>.
         </li>
       </ul>
     </motion.div>

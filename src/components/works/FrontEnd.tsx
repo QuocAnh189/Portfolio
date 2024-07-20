@@ -19,21 +19,21 @@ const FrontEnd = () => {
             <TiArrowForward />
           </span>
           I can build website interfaces with html5, css or JavaScript libraries
-          (React, Next.js).
+          (JQuery, React, Next.js).
         </li>
         <li className="text-base flex gap-2 text-textDark">
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
           I can build API from Front-End to Back-End with RTK-Query , React
-          Query.
+          Query, Axios, ...
         </li>
         <li className="text-base flex gap-2 text-textDark">
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
           On the other hand , I use interface building libraries like Tailwind ,
-          Chakra ,... and Responsive Website.
+          Bootstrap to build and responsive website.
         </li>
       </ul>
     </motion.div>
