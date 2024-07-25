@@ -19,7 +19,7 @@ const English = () => {
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          I have TOEIC 580 2 skills certificate.
+          Listening & Reading skill with score 580
         </li>
         <li className="text-base flex gap-2 text-textDark">
           <span className="text-textGreen mt-1">

@@ -14,17 +14,19 @@ import avatar from "src/assets/images/avatar.png";
 
 const technologies = [
   "JavaScript (ES6+)",
-  "React",
   "TypeScript",
   "PHP",
-  "MongoDB",
-  "Redux Toolkit",
+  "React",
   "Next.js",
-  "Node.js",
-  "Express.js",
-  "Tailwinds",
-  "Bootstrap",
+  "Laravel",
   "Phalcon",
+  "MongoDB",
+  "MySQL",
+  "PostgresSQL",
+  "Redux Toolkit",
+  "Node.js",
+  "Tailwind",
+  "Bootstrap",
 ];
 
 const About = () => {

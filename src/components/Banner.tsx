@@ -46,17 +46,11 @@ const Banner = () => {
           transition={{ duration: 0.5, delay: 0.9 }}
           className="text-base md:max-w-[650px] text-textDark font-medium text-justify"
         >
-          I am a web developer with over 1+ years of experience in University.I
-          am a student 3rd at University Of Information Technology. I have a
-          strong foundation in front-end & back-end development and am skilled
-          in creating user-friendly and responsive web applications using React
+          I am a web developer with over 3+ years of experience in University.I
+          am a student at University Of Information Technology. I have a strong
+          foundation in front-end & back-end development and am skilled in
+          creating user-friendly and responsive web applications using React,PHP
           and its ecosystem.{" "}
-          <a>
-            <span className="text-textGreen inline-flex relative cursor-pointer overflow-x-hidden group">
-              Learn more
-              <span className="absolute w-full h-[1px] bg-textGreen left-0 bottom-0 -translate-x-[101%] group-hover:translate-x-0 transition-transform duration-500"></span>
-            </span>
-          </a>
         </motion.p>
         <a href="https://github.com/QuocAnh189" target="_blank">
           <motion.button
