@@ -5,7 +5,7 @@ const BackEnd = () => {
   const skills = [
     "SOLID Principles, Design Patterns.",
     "I can build Backend API function base on product requirement.",
-    "ABAC, RBAC authorization",
+    "Model authorization (MAC, RBAC)",
     "Clean Architecture",
   ];
 

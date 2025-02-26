@@ -2,6 +2,12 @@ import { motion } from "framer-motion";
 import { TiArrowForward } from "react-icons/ti";
 
 const English = () => {
+  const skills = [
+    "Listening & Reading skill with score 580",
+    "Speaking & Writting skill with score 260",
+    "I can read good English documents.",
+  ];
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -15,18 +21,17 @@ const English = () => {
       </h3>
       <p className="text-sm mt-1 font-medium text-textDark">Current</p>
       <ul className="mt-6 flex flex-col gap-3">
-        <li className="text-base flex gap-2 text-textDark">
-          <span className="text-textGreen mt-1">
-            <TiArrowForward />
-          </span>
-          Listening & Reading skill with score 580
-        </li>
-        <li className="text-base flex gap-2 text-textDark">
-          <span className="text-textGreen mt-1">
-            <TiArrowForward />
-          </span>
-          I can read basic English documents.
-        </li>
+        {skills.map((skill: string, index: number) => (
+          <li
+            key={`skill-${index}`}
+            className="text-base flex gap-2 text-textDark"
+          >
+            <span className="text-textGreen mt-1">
+              <TiArrowForward />
+            </span>
+            {skill}
+          </li>
+        ))}
       </ul>
     </motion.div>
   );

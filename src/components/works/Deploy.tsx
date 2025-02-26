@@ -2,6 +2,11 @@ import { motion } from "framer-motion";
 import { TiArrowForward } from "react-icons/ti";
 
 const Deploy = () => {
+  const skills = [
+    "I have experience in implementing projects with Ubuntu",
+    "I know about Nginx, Docker service",
+  ];
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -14,20 +19,17 @@ const Deploy = () => {
         <span className="text-textGreen tracking-wide">@Deploy</span>
       </h3>
       <ul className="mt-6 flex flex-col gap-3">
-        <li className="text-base flex gap-2 text-textDark">
-          <span className="text-textGreen mt-1">
-            <TiArrowForward />
-          </span>
-          I have experience in implementing projects with{" "}
-          <span className="font-bold text-white">Azure</span>.
-        </li>
-        <li className="text-base flex gap-2 text-textDark">
-          <span className="text-textGreen mt-1">
-            <TiArrowForward />
-          </span>
-          I know about{" "}
-          <span className="font-bold text-white">Nginx, Docker service</span>.
-        </li>
+        {skills.map((skill: string, index: number) => (
+          <li
+            key={`skill-${index}`}
+            className="text-base flex gap-2 text-textDark"
+          >
+            <span className="text-textGreen mt-1">
+              <TiArrowForward />
+            </span>
+            {skill}
+          </li>
+        ))}
       </ul>
     </motion.div>
   );

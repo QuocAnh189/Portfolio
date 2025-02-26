@@ -19,7 +19,7 @@ const Database = () => {
           <span className="text-textGreen mt-1">
             <TiArrowForward />
           </span>
-          Intermediate with MySQL, PostgresSQL, Redis.
+          Familiar with MySQL, PostgresSQL, Redis.
         </li>
         <li className="text-base flex gap-2 text-textDark">
           <span className="text-textGreen mt-1">

@@ -11,20 +11,21 @@ import { AiFillThunderbolt } from "react-icons/ai";
 
 //image
 import avatar from "src/assets/images/avatar.png";
+import kltn from "src/assets/images/KLTN.jpg";
 
 const technologies = [
-  "JavaScript (ES6+)",
-  "TypeScript",
-  "PHP",
+  "JavaScript",
   "React",
+  "TypeScript",
   "Next.js",
+  "Go",
+  "Gin-gonic",
+  "PHP",
   "Laravel",
-  "Phalcon",
   "MongoDB",
   "MySQL",
   "PostgresSQL",
   "Redux Toolkit",
-  "Node.js",
   "Tailwind",
   "Bootstrap",
 ];
@@ -52,8 +53,8 @@ const About = () => {
             front-end engineer but also back-end engineer.
             <span className="text-textGreen">
               {" "}
-              Key skills in HTML, CSS, PHP, Javascript, Typescript and React,
-              Next.js , Node.js, Phalcon .
+              Key skills in Backend and Frontend development - Software
+              Engineering
             </span>
           </p>
           <p>Here are a few technologies I have been working with recently:</p>
@@ -77,7 +78,7 @@ const About = () => {
                 onClick={() => setModalImage(!modalImage)}
                 data-toggle="modal"
                 className="hover:cursor-pointer rounded-lg h-full object-cover"
-                src={avatar}
+                src={kltn}
                 alt="profileImg"
               />
             </div>
@@ -96,7 +97,7 @@ const About = () => {
             height={200}
             data-toggle="modal"
             className="rounded-lg w-[600px] object-cover"
-            src={avatar}
+            src={kltn}
             alt="profileImg"
           />
         </div>

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import "animate.css";
 
 //images
-import logoBanner from "src/assets/images/logoBanner.svg";
+import me from "src/assets/images/anhquoc.png";
 import Image from "next/image";
 
 const Banner = () => {
@@ -36,9 +36,7 @@ const Banner = () => {
           className="flex flex-col text-4xl lgl:text-5xl font-titleFont font-semibold"
         >
           Tran Phuoc Anh Quoc.
-          <span className="text-white mt-2 lgl:mt-4">
-            I can build everything for the web
-          </span>
+          <span className="text-white mt-2 lgl:mt-4">Software Engineer</span>
         </motion.h1>
         <motion.p
           initial={{ y: 10, opacity: 0 }}
@@ -46,11 +44,11 @@ const Banner = () => {
           transition={{ duration: 0.5, delay: 0.9 }}
           className="text-base md:max-w-[650px] text-textDark font-medium text-justify"
         >
-          I am a web developer with over 3+ years of experience in University.I
-          am a student at University Of Information Technology. I have a strong
-          foundation in front-end & back-end development and am skilled in
-          creating user-friendly and responsive web applications using React,PHP
-          and its ecosystem.{" "}
+          I am a software engineering - full stack developer of experience in
+          University. I am a student at University Of Information Technology. I
+          have a strong foundation in front-end & back-end development and am
+          skilled in creating user-friendly and web applications using Golang,
+          JavaScript, TypeScript and its ecosystem.
         </motion.p>
         <a href="https://github.com/QuocAnh189" target="_blank">
           <motion.button
@@ -59,7 +57,7 @@ const Banner = () => {
             transition={{ duration: 0.5, delay: 1 }}
             className="px-6 py-4 text-sm font-titleFont border border-textGreen rounded-md text-textGreen hover:bg-hoverColor duration-300"
           >
-            Check out my Project
+            Visit my Github
           </motion.button>
         </a>
       </motion.div>
@@ -69,7 +67,7 @@ const Banner = () => {
         transition={{ duration: 0.5, delay: 1.1 }}
         className="animate__animated animate-pulse"
       >
-        <Image width={0} height={0} src={logoBanner} alt="logoBanner" />
+        <Image width={400} height={0} src={me} alt="logoBanner" />
       </motion.div>
     </section>
   );
