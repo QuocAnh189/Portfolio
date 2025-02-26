@@ -10,8 +10,7 @@ import SectionTitle from "./SectionTitle";
 import { AiFillThunderbolt } from "react-icons/ai";
 
 //image
-import avatar from "src/assets/images/avatar.png";
-import kltn from "src/assets/images/KLTN.jpg";
+import kltn from "src/assets/images/kltn.jpg";
 
 const technologies = [
   "JavaScript",
