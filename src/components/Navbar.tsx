@@ -114,7 +114,7 @@ const Navbar = () => {
             </Link>
           </ul>
           <Link
-            href="https://drive.google.com/file/d/1ZUaJ0q54fzBrE6afSOB8g2E7t5LT_lsx/preview"
+            href="https://drive.google.com/file/d/17KbveyAx-MJxlBLMdpBiDbq1OBTgorSG/view"
             target="_blank"
           >
             <motion.button
