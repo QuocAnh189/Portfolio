@@ -3,10 +3,10 @@ import { TiArrowForward } from "react-icons/ti";
 
 const BackEnd = () => {
   const skills = [
-    "SOLID Principles, Design Patterns.",
-    "I can build Backend API function base on product requirement.",
-    "Model authorization (MAC, RBAC)",
-    "Clean Architecture",
+    "understanding of SOLID principles, Design Patterns, and Clean Architecture",
+    "Experienced in developing RESTful APIs and GRPC services based on product requirements",
+    "Implementing authentication and authorization mechanisms RBAC models",
+    "Experienced in backend frameworks: Golang (Gin-Gonic), Laravel",
   ];
 
   return (

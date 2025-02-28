@@ -2,6 +2,10 @@ import { motion } from "framer-motion";
 import { TiArrowForward } from "react-icons/ti";
 
 const Database = () => {
+  const skills = [
+    "Familiar in relational databases MySQL, PostgreSQL, and Redis, MongoDB",
+    "Familiar such as GORM, sqlc (Go), Prisma (Node.js), and Eloquent (Laravel)",
+  ];
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -15,19 +19,17 @@ const Database = () => {
       </h3>
       <p className="text-sm mt-1 font-medium text-textDark">Current</p>
       <ul className="mt-6 flex flex-col gap-3">
-        <li className="text-base flex gap-2 text-textDark">
-          <span className="text-textGreen mt-1">
-            <TiArrowForward />
-          </span>
-          Familiar with MySQL, PostgresSQL, Redis.
-        </li>
-        <li className="text-base flex gap-2 text-textDark">
-          <span className="text-textGreen mt-1">
-            <TiArrowForward />
-          </span>
-          I do many projects with MongoDB and use related libraries for
-          retrieval
-        </li>
+        {skills.map((skill: string, index: number) => (
+          <li
+            key={`skill-${index}`}
+            className="text-base flex gap-2 text-textDark"
+          >
+            <span className="text-textGreen mt-1">
+              <TiArrowForward />
+            </span>
+            {skill}
+          </li>
+        ))}
       </ul>
     </motion.div>
   );

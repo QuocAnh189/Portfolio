@@ -2,11 +2,6 @@
 import SectionTitle from "./SectionTitle";
 import Project from "./projects/Project";
 
-//image
-import quizzesApp from "src/assets/images/eventhub.png";
-import footballApp from "src/assets/images/football.png";
-import organicApp from "src/assets/images/organic.png";
-
 import projects from "src/data/project";
 
 const Projects = () => {

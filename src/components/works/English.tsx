@@ -5,7 +5,7 @@ const English = () => {
   const skills = [
     "Listening & Reading skill with score 580",
     "Speaking & Writting skill with score 260",
-    "I can read good English documents.",
+    "Comfortable with reading and understanding technical documents in English",
   ];
 
   return (

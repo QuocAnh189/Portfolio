@@ -3,9 +3,10 @@ import { TiArrowForward } from "react-icons/ti";
 
 const FrontEnd = () => {
   const skills = [
-    "I can build website interfaces with html, css or JavaScript libraries (JQuery, React, Next.js).",
-    "I can build API from Front-End to Back-End (RTK-Query , React Query, Axios, ...)",
-    "On the other hand , I use interface building libraries like Tailwind , Bootstrap, Shadcn, ... to build and responsive website.",
+    "Proficient in building modern, responsive web interfaces using HTML, CSS, and JavaScript",
+    "Experienced with frontend libraries and frameworks: React, Next.js",
+    "Capable of integrating frontend applications with backend APIs using RTK-Query, React Query, Axios, and Fetch API",
+    "Skilled in utilizing UI frameworks such as Tailwind CSS, Bootstrap, and ShadCN to enhance user experience",
   ];
 
   return (

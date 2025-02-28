@@ -41,15 +41,17 @@ const About = () => {
       <div className="flex flex-col lgl:flex-row gap-16">
         <div className="w-full lgl:w-2/3 text-base text-textDark font-medium flex flex-col gap-4 text-justify">
           <p>
-            Hello! My name is Tran Phuoc Anh Quoc and I enjoy creating things
-            that live on the internet. My interest in web development started
-            back in 2021 when I passed into UIT university.
+            Hello! My name is{" "}
+            <span className="text-textGreen">Tran Phuoc Anh Quoc</span> and I
+            enjoy creating things that live on the internet. My interest in
+            software engineering started back in 2021 when I passed into
+            University Of Information Technologies (UIT).
           </p>
           <p>
             Aspiring and enthusiastic software engineer developer studies
             Software Engineering, specialization in Software Development.
-            Developed web applications and mobile applications not only as a
-            front-end engineer but also back-end engineer.
+            Developed web and software applications not only as a front-end
+            engineer but also back-end engineer.
             <span className="text-textGreen">
               {" "}
               Key skills in Backend and Frontend development - Software
@@ -92,8 +94,8 @@ const About = () => {
             onClick={() => setModalImage(!modalImage)}
           ></div>
           <Image
-            width={400}
-            height={200}
+            width={600}
+            height={400}
             data-toggle="modal"
             className="rounded-lg w-[600px] object-cover"
             src={kltn}

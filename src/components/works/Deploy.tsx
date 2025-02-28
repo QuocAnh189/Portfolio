@@ -3,8 +3,9 @@ import { TiArrowForward } from "react-icons/ti";
 
 const Deploy = () => {
   const skills = [
-    "I have experience in implementing projects with Ubuntu",
-    "I know about Nginx, Docker service",
+    "Experience deploying and managing applications on Linux servers",
+    "Proficient in setting up and configuring Nginx for reverse proxy and load balancing",
+    "Skilled in containerization using Docker and deploying applications in a cloud environment",
   ];
 
   return (

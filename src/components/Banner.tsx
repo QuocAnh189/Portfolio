@@ -47,8 +47,8 @@ const Banner = () => {
           I am a software engineering - full stack developer of experience in
           University. I am a student at University Of Information Technology. I
           have a strong foundation in front-end & back-end development and am
-          skilled in creating user-friendly and web applications using Golang,
-          JavaScript, TypeScript and its ecosystem.
+          skilled in creating user-friendly and software applications using
+          Golang, JavaScript, TypeScript and its ecosystem.
         </motion.p>
         <a href="https://github.com/QuocAnh189" target="_blank">
           <motion.button

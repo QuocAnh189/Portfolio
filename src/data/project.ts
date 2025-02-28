@@ -13,7 +13,7 @@ const projects: IProject[] = [
     role: "Full Stack",
     right: true,
     image: quizzesApp,
-    name: "Event Hub for Website",
+    name: "Event Hub",
     description:
       "EventHub is an online event management and ticketing application that allows users to create, manage, and participate in events with ease and convenience.",
     technologies: [
@@ -22,6 +22,7 @@ const projects: IProject[] = [
       "Gin-gonic",
       "Postgres",
       "Redux Toolkit",
+      "Gorm",
       "Socket-IO",
     ],
     fe_link: "https://github.com/QuocAnh189/EventHub",
@@ -33,7 +34,7 @@ const projects: IProject[] = [
     role: "Full Stack",
     right: false,
     image: parkingApp,
-    name: "ParkingLot License Detection",
+    name: "ParkingLot (License-Plate-Detection)",
     description:
       "The system allows users to enter license plate numbers, check-in/check-out times, and display parking availability. Additionally, the application can manage access cards and vehicle entry history.",
     technologies: [
@@ -44,7 +45,7 @@ const projects: IProject[] = [
       "Redux Toolkit",
       "Docker",
       "Nginx",
-      "yolov5",
+      "Yolo-v5",
     ],
     fe_link: "https://github.com/QuocAnh189/Parkinglot_Fe",
     be_link: "https://github.com/QuocAnh189/GoParkingLot",
@@ -58,14 +59,7 @@ const projects: IProject[] = [
     name: "Portfolio CMS",
     description:
       "This Laravel-based Portfolio CMS provides an intuitive platform to manage and showcase personal or professional projects, making it easy to create and update dynamic portfolios. Implementing Clean Architecture, Repository Pattern, CQRS, Cache with Redis",
-    technologies: [
-      "PHP",
-      "Laravel",
-      "Datatable",
-      "MySql",
-      "Docker",
-      "clean architecture",
-    ],
+    technologies: ["PHP", "JQuery", "Laravel", "Datatable", "MySql", "Docker"],
     fe_link: "https://github.com/QuocAnh189/Portfolio_CMS",
     be_link: "https://github.com/QuocAnh189/Portfolio_CMS",
     demo: "",
@@ -81,10 +75,9 @@ const projects: IProject[] = [
     technologies: [
       "Next.js",
       "Prisma",
-      "Taildwind",
+      "Tailwind",
       "Live Kit",
-      "ShadcnUI",
-      "MySQL",
+      "MongoDB",
       "Socket-IO",
     ],
     fe_link: "https://github.com/QuocAnh189/Discord_Clone",
@@ -96,7 +89,7 @@ const projects: IProject[] = [
     role: "Full Stack",
     right: true,
     image: footballApp,
-    name: "Soccer Championship Management",
+    name: "Soccer Championship",
     description:
       "Efficiently organize and manage soccer tournaments, from club to national levels, handling schedules, results, team information, tickets, and marketing",
     technologies: [
@@ -104,7 +97,7 @@ const projects: IProject[] = [
       "Typescript",
       "Node.js",
       "MongoDB",
-      "Taildwind",
+      "Tailwind",
       "React-query",
     ],
     fe_link: "https://github.com/QuocAnh189/SoccerManagement_FE",
@@ -116,10 +109,10 @@ const projects: IProject[] = [
     role: "Front End",
     right: false,
     image: organicApp,
-    name: "Website Organic Food",
+    name: "EcoEat - Organic Food",
     description:
       "Conveniently buy high-quality organic food online, with detailed product information, promoting healthy and sustainable lifestyles while supporting local producers and suppliers",
-    technologies: ["Next.js", "Typescript", "Taildwind", "React-query"],
+    technologies: ["Next.js", "Typescript", "Tailwind", "React-query"],
     fe_link: "https://github.com/QuocAnh189/OrganicFood_FE",
     demo: "https://organicfoodfe.vercel.app/",
   },
