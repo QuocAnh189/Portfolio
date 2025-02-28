@@ -44,11 +44,12 @@ const Banner = () => {
           transition={{ duration: 0.5, delay: 0.9 }}
           className="text-base md:max-w-[650px] text-textDark font-medium text-justify"
         >
-          I am a software engineering - full stack developer of experience in
-          University. I am a student at University Of Information Technology. I
-          have a strong foundation in front-end & back-end development and am
-          skilled in creating user-friendly and software applications using
-          Golang, JavaScript, TypeScript and its ecosystem.
+          I am a graduate with a degree in Software Engineering - full stack
+          developer of experience in University. I am a student at University Of
+          Information Technology. I have a strong foundation in front-end &
+          back-end development and am skilled in creating user-friendly and
+          software applications using Golang, JavaScript, TypeScript and its
+          ecosystem.
         </motion.p>
         <a href="https://github.com/QuocAnh189" target="_blank">
           <motion.button
