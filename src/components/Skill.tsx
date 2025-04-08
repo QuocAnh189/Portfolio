@@ -1,109 +1,126 @@
-import { useState } from "react";
+import { useState } from 'react'
 
 //components
-import SectionTitle from "./SectionTitle";
-import FrontEnd from "./works/FrontEnd";
-import BackEnd from "./works/BackEnd";
-import Database from "./works/Database";
-import Deploy from "./works/Deploy";
-import English from "./works/English";
+import Programming from './works/Programming'
+import Framework from './works/Framework'
+import SectionTitle from './SectionTitle'
+import Database from './works/Database'
+import SoftwareDesign from './works/SoftwareDesign'
+import ApiArchitecture from './works/ApiArchitecture'
+import VersionControl from './works/VersionControl'
+import Cloud from './works/Cloud'
+import SoftSkill from './works/SoftSkill'
 
 //clsx
-import clsx from "clsx";
+import clsx from 'clsx'
 
 const defaultActiveItem = {
-  FrontEnd: false,
-  BackEnd: false,
+  Programming: false,
+  Framework: false,
   Database: false,
-  Deploy: false,
-  English: false,
-};
+  SoftwareDesign: false,
+  ApiArchitecture: false,
+  VersionControl: false,
+  Cloud: false,
+  SoftSkill: false,
+}
 
-const Experience = () => {
-  const [activeItems, setActiveItems] = useState({
-    FrontEnd: true,
-    BackEnd: false,
-    Database: false,
-    Deploy: false,
-    English: false,
-  });
+const Skill = () => {
+  const [activeItems, setActiveItems] = useState({ ...defaultActiveItem, Programming: true })
 
   const handleChangeActiveItem = (name: string) => {
-    setActiveItems({ ...defaultActiveItem, [name]: true });
-  };
+    setActiveItems({ ...defaultActiveItem, [name]: true })
+  }
 
   return (
-    <section
-      id="skill"
-      className="max-w-containerXs mx-auto py-10 lgl:py-24 px-4"
-    >
+    <section id="skill" className="max-w-containerXs mx-auto py-10 lgl:py-24 px-4">
       <SectionTitle title="Some skills I have" titleNo="02" />
       <div className="w-full mt-10 flex flex-col md:flex-row gap-16">
-        <ul className="md:w-32 flex flex-col">
+        <ul className="md:w-2/5 flex flex-col">
           <li
-            onClick={() => handleChangeActiveItem("FrontEnd")}
+            onClick={() => handleChangeActiveItem('Programming')}
             className={clsx(
               `border-l-2  text-textDark bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-4 font-medium`,
-              activeItems.FrontEnd
-                ? "border-l-textGreen text-textGreen"
-                : "border-l-hoverColor"
+              activeItems.Programming ? 'border-l-textGreen text-textGreen' : 'border-l-hoverColor',
             )}
           >
-            Front-End
+            Programming
           </li>
           <li
-            onClick={() => handleChangeActiveItem("BackEnd")}
+            onClick={() => handleChangeActiveItem('Framework')}
             className={clsx(
               `border-l-2  text-textDark bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-4 font-medium`,
-              activeItems.BackEnd
-                ? "border-l-textGreen text-textGreen"
-                : "border-l-hoverColor"
+              activeItems.Framework ? 'border-l-textGreen text-textGreen' : 'border-l-hoverColor',
             )}
           >
-            Back-End
+            Framework
           </li>
           <li
-            onClick={() => handleChangeActiveItem("Database")}
+            onClick={() => handleChangeActiveItem('Database')}
             className={clsx(
               `border-l-2  text-textDark bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-4 font-medium`,
-              activeItems.Database
-                ? "border-l-textGreen text-textGreen"
-                : "border-l-hoverColor"
+              activeItems.Database ? 'border-l-textGreen text-textGreen' : 'border-l-hoverColor',
             )}
           >
-            Database
+            Databases
           </li>
           <li
-            onClick={() => handleChangeActiveItem("Deploy")}
+            onClick={() => handleChangeActiveItem('SoftwareDesign')}
             className={clsx(
               `border-l-2  text-textDark bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-4 font-medium`,
-              activeItems.Deploy
-                ? "border-l-textGreen text-textGreen"
-                : "border-l-hoverColor"
+              activeItems.SoftwareDesign ? 'border-l-textGreen text-textGreen' : 'border-l-hoverColor',
             )}
           >
-            Deploy
+            Software Design
           </li>
           <li
-            onClick={() => handleChangeActiveItem("English")}
+            onClick={() => handleChangeActiveItem('ApiArchitecture')}
             className={clsx(
               `border-l-2  text-textDark bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-4 font-medium`,
-              activeItems.English
-                ? "border-l-textGreen text-textGreen"
-                : "border-l-hoverColor"
+              activeItems.ApiArchitecture ? 'border-l-textGreen text-textGreen' : 'border-l-hoverColor',
             )}
           >
-            English
+            API Architecture
+          </li>
+          <li
+            onClick={() => handleChangeActiveItem('VersionControl')}
+            className={clsx(
+              `border-l-2  text-textDark bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-4 font-medium`,
+              activeItems.VersionControl ? 'border-l-textGreen text-textGreen' : 'border-l-hoverColor',
+            )}
+          >
+            Version Control
+          </li>
+          <li
+            onClick={() => handleChangeActiveItem('Cloud')}
+            className={clsx(
+              `border-l-2  text-textDark bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-4 font-medium`,
+              activeItems.Cloud ? 'border-l-textGreen text-textGreen' : 'border-l-hoverColor',
+            )}
+          >
+            Cloud
+          </li>
+          <li
+            onClick={() => handleChangeActiveItem('SoftSkill')}
+            className={clsx(
+              `border-l-2  text-textDark bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-4 font-medium`,
+              activeItems.SoftSkill ? 'border-l-textGreen text-textGreen' : 'border-l-hoverColor',
+            )}
+          >
+            Soft Skills
           </li>
         </ul>
-        {activeItems.FrontEnd && <FrontEnd />}
-        {activeItems.BackEnd && <BackEnd />}
+        {activeItems.Programming && <Programming />}
+        {activeItems.Framework && <Framework />}
         {activeItems.Database && <Database />}
-        {activeItems.Deploy && <Deploy />}
-        {activeItems.English && <English />}
+        {activeItems.SoftwareDesign && <SoftwareDesign />}
+        {activeItems.ApiArchitecture && <ApiArchitecture />}
+        {activeItems.VersionControl && <VersionControl />}
+        {activeItems.Cloud && <Cloud />}
+        {activeItems.SoftSkill && <SoftSkill />}
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Experience;
+export default Skill

@@ -1,8 +1,9 @@
 //components
-import SectionTitle from "./SectionTitle";
-import Project from "./projects/Project";
+import SectionTitle from './SectionTitle'
+import Project from './projects/Project'
 
-import projects from "src/data/project";
+//data
+import projects from 'src/data/project'
 
 const Projects = () => {
   return (
@@ -14,7 +15,7 @@ const Projects = () => {
         ))}
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Projects;
+export default Projects

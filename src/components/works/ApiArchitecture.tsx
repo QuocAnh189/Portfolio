@@ -1,18 +1,17 @@
 import { motion } from 'framer-motion'
 import { TiArrowForward } from 'react-icons/ti'
 
-/*************  ✨ Windsurf Command 🌟  *************/
-const Database = () => {
+const ApiArchitecture = () => {
   const skills = [
-    'Designed and managed relational schemas, queries, and transactions for data consistency.',
-    'Implemented SQL features and optimized for applications',
-    'Worked with NoSQL data models to handle unstructured and data.',
-    'Used Redis for caching and real-time data processing to enhance application speed.',
+    'Built RESTful APIs with clear endpoints, consistent status codes, and stateless communication',
+    'Implemented efficient binary-based RPC protocols for internal service-to-service communication',
+    'Developed real-time features like live updates and chat using WebSocket connections',
   ]
+
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.1 }} className="w-full">
       <h3 className="flex gap-1 font-medium text-xl font-titleFont">
-        <span className="text-textGreen tracking-wide">@Database</span>
+        <span className="text-textGreen tracking-wide">@ Api Architecture</span>
       </h3>
       <ul className="mt-6 flex flex-col gap-3">
         {skills.map((skill: string, index: number) => (
@@ -28,4 +27,4 @@ const Database = () => {
   )
 }
 
-export default Database
+export default ApiArchitecture

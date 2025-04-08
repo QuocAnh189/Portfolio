@@ -1,19 +1,19 @@
-"use client";
+'use client'
 
 //components
-import Navbar from "src/components/Navbar";
-import LeftSide from "src/components/LeftSide";
-import RightSide from "src/components/RightSide";
-import Banner from "src/components/Banner";
-import About from "src/components/About";
-import Experience from "src/components/Skill";
-import Projects from "src/components/Projects";
-import Archive from "src/components/Archive";
-import Contact from "src/components/Contact";
-import Footer from "src/components/Footer";
+import Navbar from 'src/components/Navbar'
+import LeftSide from 'src/components/LeftSide'
+import RightSide from 'src/components/RightSide'
+import Banner from 'src/components/Banner'
+import About from 'src/components/About'
+import Skill from 'src/components/Skill'
+import Projects from 'src/components/Projects'
+import Archive from 'src/components/Archive'
+import Contact from 'src/components/Contact'
+import Footer from 'src/components/Footer'
 
 //animation
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion'
 
 export default function Home() {
   return (
@@ -31,7 +31,7 @@ export default function Home() {
         <div className="h-[88vh] w-full mx-auto p-4">
           <Banner />
           <About />
-          <Experience />
+          <Skill />
           <Projects />
           <Archive />
           <Contact />
@@ -47,5 +47,5 @@ export default function Home() {
         </motion.div>
       </div>
     </main>
-  );
+  )
 }

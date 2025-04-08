@@ -1,61 +1,54 @@
-import { useState } from "react";
+import { useState } from 'react'
 
 //next
-import Image from "next/image";
+import Image from 'next/image'
 
 //component
-import SectionTitle from "./SectionTitle";
+import SectionTitle from './SectionTitle'
 
 //icon
-import { AiFillThunderbolt } from "react-icons/ai";
+import { AiFillThunderbolt } from 'react-icons/ai'
 
 //image
-import kltn from "src/assets/images/kltn.jpg";
+import kltn from 'src/assets/images/kltn.jpg'
 
 const technologies = [
-  "JavaScript",
-  "React",
-  "TypeScript",
-  "Next.js",
-  "Go",
-  "Gin-gonic",
-  "PHP",
-  "Laravel",
-  "MongoDB",
-  "MySQL",
-  "PostgresSQL",
-  "Redux Toolkit",
-  "Tailwind",
-  "Bootstrap",
-];
+  'Go',
+  'Gin-gonic',
+  'JavaScript',
+  'React',
+  'TypeScript',
+  'Next.js',
+  'PHP',
+  'Laravel',
+  'MongoDB',
+  'MySQL',
+  'PostgresSQL',
+  'Redis',
+  'Tailwind',
+  'Redux',
+]
 
 const About = () => {
-  const [modalImage, setModalImage] = useState<boolean>(false);
+  const [modalImage, setModalImage] = useState<boolean>(false)
 
   return (
-    <section
-      id="about"
-      className="max-w-containerSmall mx-auto py-10 lgl:py-32 flex flex-col gap-8"
-    >
+    <section id="about" className="max-w-containerSmall mx-auto py-10 lgl:py-32 flex flex-col gap-8">
       <SectionTitle titleNo="01" title="About Me" />
       <div className="flex flex-col lgl:flex-row gap-16">
         <div className="w-full lgl:w-2/3 text-base text-textDark font-medium flex flex-col gap-4 text-justify">
           <p>
-            Hello! My name is{" "}
-            <span className="text-textGreen">Tran Phuoc Anh Quoc</span> and I
-            enjoy creating things that live on the internet. My interest in
-            software engineering started back in 2021 when I passed into
+            Hello! My name is <span className="text-textGreen">Tran Phuoc Anh Quoc</span> and I enjoy creating things
+            that live on the internet. My interest in software engineering started back in 2021 when I passed into
             University Of Information Technologies (UIT).
           </p>
           <p>
-            Aspiring and enthusiastic software engineer developer studies
-            Software Engineering, specialization in Software Development.
-            Developed web and software applications not only as a front-end
-            engineer but also back-end engineer.
+            Aspiring and enthusiastic software engineer developer studies Software Engineering, specialization in
+            Software Development. Developed web and software applications not only as a front-end engineer but also
+            back-end engineer.
             <span className="text-textGreen">
-              {" "}
-              Key skills in Backend and Frontend development - Software
-              Engineering
+              {' '}
+              Key skills in Backend and Frontend development - Software Engineering
             </span>
           </p>
           <p>Here are a few technologies I have been working with recently:</p>
@@ -104,7 +97,7 @@ const About = () => {
         </div>
       )}
     </section>
-  );
-};
+  )
+}
 
-export default About;
+export default About

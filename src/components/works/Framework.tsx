@@ -1,18 +1,17 @@
 import { motion } from 'framer-motion'
 import { TiArrowForward } from 'react-icons/ti'
 
-/*************  ✨ Windsurf Command 🌟  *************/
-const Database = () => {
+const Framework = () => {
   const skills = [
-    'Designed and managed relational schemas, queries, and transactions for data consistency.',
-    'Implemented SQL features and optimized for applications',
-    'Worked with NoSQL data models to handle unstructured and data.',
-    'Used Redis for caching and real-time data processing to enhance application speed.',
+    'Use Gin-gonic to create RESTful APIs using Gin for high-performance and minimalist web service architecture.',
+    'Use React to developed component-based UIs for responsive and interactive web applications.',
+    'Use Next.js to built server-side rendered (SSR) and statically generated web apps using Next.js for better SEO and performance.',
   ]
+
   return (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.1 }} className="w-full">
       <h3 className="flex gap-1 font-medium text-xl font-titleFont">
-        <span className="text-textGreen tracking-wide">@Database</span>
+        <span className="text-textGreen tracking-wide">@ Framework</span>
       </h3>
       <ul className="mt-6 flex flex-col gap-3">
         {skills.map((skill: string, index: number) => (
@@ -28,4 +27,4 @@ const Database = () => {
   )
 }
 
-export default Database
+export default Framework

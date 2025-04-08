@@ -1,11 +1,6 @@
 //icons
-import { TbBrandGithub } from "react-icons/tb";
-import {
-  SlSocialYoutube,
-  SlSocialLinkedin,
-  SlSocialFacebook,
-  SlSocialInstagram,
-} from "react-icons/sl";
+import { TbBrandGithub } from 'react-icons/tb'
+import { SlSocialYoutube, SlSocialLinkedin, SlSocialFacebook, SlSocialInstagram } from 'react-icons/sl'
 
 const LeftSide = () => {
   return (
@@ -16,26 +11,17 @@ const LeftSide = () => {
             <TbBrandGithub />
           </span>
         </a>
-        <a
-          href="https://www.youtube.com/channel/UCab8oUhngzefFGNrusYY-UQ"
-          target="=_blank"
-        >
+        <a href="https://www.youtube.com/channel/UCab8oUhngzefFGNrusYY-UQ" target="=_blank">
           <span className="w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2  duration-300">
             <SlSocialYoutube />
           </span>
         </a>
-        <a
-          href="https://www.linkedin.com/in/anh-quoc-tran-phuoc-6451922b3/"
-          target="=_blank"
-        >
+        <a href="https://www.linkedin.com/in/anhquoc1809/" target="=_blank">
           <span className="w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2  duration-300">
             <SlSocialLinkedin />
           </span>
         </a>
-        <a
-          href="https://www.facebook.com/profile.php?id=100024539650227"
-          target="=_blank"
-        >
+        <a href="https://www.facebook.com/tranphuocanhquoc2003" target="=_blank">
           <span className="w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2  duration-300">
             <SlSocialFacebook />
           </span>
@@ -48,7 +34,7 @@ const LeftSide = () => {
       </div>
       <span className="w-[2px] h-32 bg-textDark"></span>
     </div>
-  );
-};
+  )
+}
 
-export default LeftSide;
+export default LeftSide
