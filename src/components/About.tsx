@@ -12,22 +12,9 @@ import { AiFillThunderbolt } from 'react-icons/ai'
 //image
 import kltn from 'src/assets/images/kltn.jpg'
 
-const technologies = [
-  'Go',
-  'Gin-gonic',
-  'JavaScript',
-  'React',
-  'TypeScript',
-  'Next.js',
-  'PHP',
-  'Laravel',
-  'MongoDB',
-  'MySQL',
-  'PostgresSQL',
-  'Redis',
-  'Tailwind',
-  'Redux',
-]
+//data
+import technologies from 'src/data/technology'
+import ModalImage from './modal/ModalImage'
 
 const About = () => {
   const [modalImage, setModalImage] = useState<boolean>(false)
@@ -53,7 +40,7 @@ const About = () => {
           </p>
           <p>Here are a few technologies I have been working with recently:</p>
           <ul className="max-w-[450px] text-sm font-titleFont grid grid-cols-2 gap-2 mt-6">
-            {technologies.map((technology, index) => (
+            {technologies.map((technology: string, index: number) => (
               <li key={index} className="flex items-center gap-2">
                 <span className="text-textGreen">
                   <AiFillThunderbolt />
@@ -80,22 +67,7 @@ const About = () => {
           <div className="hidden lgl:inline-block absolute w-full h-80 bg-textGreen/20 rounded-md top-0 left-0 group-hover:bg-transparent duration-300" />
         </div>
       </div>
-      {modalImage && (
-        <div className="absolute flex items-center justify-center top-0 left-0 right-0 bottom-0 z-50 p-10">
-          <div
-            className="absolute z-[-1] w-full h-full bg-slate-500 opacity-70"
-            onClick={() => setModalImage(!modalImage)}
-          ></div>
-          <Image
-            width={600}
-            height={400}
-            data-toggle="modal"
-            className="rounded-lg w-[600px] object-cover"
-            src={kltn}
-            alt="profileImg"
-          />
-        </div>
-      )}
+      {modalImage && <ModalImage onClose={() => setModalImage(!modalImage)} image={kltn} />}
     </section>
   )
 }

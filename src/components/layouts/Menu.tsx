@@ -1,21 +1,16 @@
-"use client";
+'use client'
 
 // import { useRef } from "react";
-import { motion } from "framer-motion";
-import Link from "next/link";
+import { motion } from 'framer-motion'
+import Link from 'next/link'
 
-import { AiOutlineClose } from "react-icons/ai";
-import { TbBrandGithub } from "react-icons/tb";
-import {
-  SlSocialYoutube,
-  SlSocialLinkedin,
-  SlSocialFacebook,
-  SlSocialInstagram,
-} from "react-icons/sl";
+import { AiOutlineClose } from 'react-icons/ai'
+import { TbBrandGithub } from 'react-icons/tb'
+import { SlSocialYoutube, SlSocialLinkedin, SlSocialFacebook, SlSocialInstagram } from 'react-icons/sl'
 
 interface Props {
-  handleScroll: (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => void;
-  setShowMenu: () => void;
+  handleScroll: (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => void
+  setShowMenu: () => void
 }
 
 const Menu = ({ handleScroll, setShowMenu }: Props) => {
@@ -25,43 +20,44 @@ const Menu = ({ handleScroll, setShowMenu }: Props) => {
       className="absolute mdl:hidden top-0 right-0 w-full h-screen bg-black bg-opacity-50 flex flex-col items-end"
     >
       <motion.div className="w-[80%] h-full overflow-y-scroll scrollbarHide bg-[#112240] flex flex-col items-center px-4 py-10 relative">
-        <AiOutlineClose
+        <motion.div
           initial={{ x: 20, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.1 }}
-          onClick={setShowMenu}
-          className="text-3xl text-textGreen cursor-pointer hover:text-red-500 absolute top-4 right-4"
-        />
+          className="absolute top-4 right-4"
+        >
+          <AiOutlineClose onClick={setShowMenu} className="text-3xl text-textGreen cursor-pointer hover:text-red-500" />
+        </motion.div>
         <div className="flex flex-col items-center gap-7">
           <ul className="flex flex-col text[13px] gap-7">
             <Link
-              href={"#home"}
+              href={'#home'}
               onClick={handleScroll}
               className="flex items-center font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link"
             >
               <motion.li
                 initial={{ x: 20, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.2, delay: 0.1, ease: "easeIn" }}
+                transition={{ duration: 0.2, delay: 0.1, ease: 'easeIn' }}
               >
                 Home
               </motion.li>
             </Link>
             <Link
-              href={"#about"}
+              href={'#about'}
               onClick={handleScroll}
               className="flex items-center font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link"
             >
               <motion.li
                 initial={{ x: 20, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.2, delay: 0.2, ease: "easeIn" }}
+                transition={{ duration: 0.2, delay: 0.2, ease: 'easeIn' }}
               >
                 <span className="text-textGreen">01.</span> About
               </motion.li>
             </Link>
             <Link
-              href={"#experience"}
+              href={'#experience'}
               onClick={handleScroll}
               className="flex items-center font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link"
             >
@@ -74,7 +70,7 @@ const Menu = ({ handleScroll, setShowMenu }: Props) => {
               </motion.li>
             </Link>
             <Link
-              href={"#project"}
+              href={'#project'}
               onClick={handleScroll}
               className="flex items-center font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link"
             >
@@ -87,7 +83,7 @@ const Menu = ({ handleScroll, setShowMenu }: Props) => {
               </motion.li>
             </Link>
             <Link
-              href={"#contact"}
+              href={'#contact'}
               onClick={handleScroll}
               className="flex items-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link"
             >
@@ -100,14 +96,11 @@ const Menu = ({ handleScroll, setShowMenu }: Props) => {
               </motion.li>
             </Link>
           </ul>
-          <a
-            href="https://drive.google.com/file/d/1ZUaJ0q54fzBrE6afSOB8g2E7t5LT_lsx/view"
-            target="_blank"
-          >
+          <a href="https://drive.google.com/file/d/1ZUaJ0q54fzBrE6afSOB8g2E7t5LT_lsx/view" target="_blank">
             <motion.button
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ delay: 0.6, ease: "easeIn" }}
+              transition={{ delay: 0.6, ease: 'easeIn' }}
               className="px-4 py-2 rounded-sm text-textGreen text-[13px] border border-textGreen hover:bg-hoverColor duration-300"
             >
               Resume
@@ -119,26 +112,17 @@ const Menu = ({ handleScroll, setShowMenu }: Props) => {
                 <TbBrandGithub />
               </span>
             </a>
-            <a
-              href="https://www.youtube.com/channel/UCbYT72rT32XyxUVdwy2ntYg"
-              target="=_blank"
-            >
+            <a href="https://www.youtube.com/channel/UCbYT72rT32XyxUVdwy2ntYg" target="=_blank">
               <span className="w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 translate-all duration-300">
                 <SlSocialYoutube />
               </span>
             </a>
-            <a
-              href="https://www.linkedin.com/in/quoc-anh-907341291/"
-              target="=_blank"
-            >
+            <a href="https://www.linkedin.com/in/quoc-anh-907341291/" target="=_blank">
               <span className="w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 translate-all duration-300">
                 <SlSocialLinkedin />
               </span>
             </a>
-            <a
-              href="https://www.facebook.com/profile.php?id=100024539650227"
-              target="=_blank"
-            >
+            <a href="https://www.facebook.com/profile.php?id=100024539650227" target="=_blank">
               <span className="w-10 h-10 text-xl bg-hoverColor rounded-full inline-flex items-center justify-center hover:text-textGreen cursor-pointer hover:-translate-y-2 translate-all duration-300">
                 <SlSocialFacebook />
               </span>
@@ -150,16 +134,13 @@ const Menu = ({ handleScroll, setShowMenu }: Props) => {
             </a>
           </div>
 
-          <a
-            href=""
-            className="text-sm w-72 tracking-widest text-textGreen text-center mt-4"
-          >
+          <a href="" className="text-sm w-72 tracking-widest text-textGreen text-center mt-4">
             <p>binbin18092003@gmail.com</p>
           </a>
         </div>
       </motion.div>
     </div>
-  );
-};
+  )
+}
 
-export default Menu;
+export default Menu

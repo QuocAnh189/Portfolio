@@ -1,16 +1,16 @@
 'use client'
 
 //components
-import Navbar from 'src/components/Navbar'
-import LeftSide from 'src/components/LeftSide'
-import RightSide from 'src/components/RightSide'
+import Navbar from 'src/components/layouts/Navbar'
+import LeftSide from 'src/components/layouts/LeftSide'
+import RightSide from 'src/components/layouts/RightSide'
 import Banner from 'src/components/Banner'
 import About from 'src/components/About'
 import Skill from 'src/components/Skill'
 import Projects from 'src/components/Projects'
 import Archive from 'src/components/Archive'
 import Contact from 'src/components/Contact'
-import Footer from 'src/components/Footer'
+import Footer from 'src/components/layouts/Footer'
 
 //animation
 import { motion } from 'framer-motion'

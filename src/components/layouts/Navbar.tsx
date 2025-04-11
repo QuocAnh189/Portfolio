@@ -1,54 +1,50 @@
-"use client";
+'use client'
 
-import React, { useRef, useState } from "react";
+import React, { useRef, useState } from 'react'
 
 //next
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image'
+import Link from 'next/link'
 
 //animation
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion'
 
 //component
-import Menu from "./Menu";
+import Menu from './Menu'
 
 //image
-import logo from "src/assets/images/logo.png";
+import logo from 'src/assets/images/logo.png'
 
 const Navbar = () => {
-  const ref = useRef<string | any>("");
-  const [showMenu, setShowMenu] = useState<boolean>(false);
+  const ref = useRef<string | any>('')
+  const [showMenu, setShowMenu] = useState<boolean>(false)
 
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-    e.preventDefault();
-    const href = e.currentTarget.href;
+    e.preventDefault()
+    const href = e.currentTarget.href
 
-    const targetId = href.replace(/.*\#/, "");
-    const elem = document.getElementById(targetId);
+    const targetId = href.replace(/.*\#/, '')
+    const elem = document.getElementById(targetId)
     elem?.scrollIntoView({
-      behavior: "smooth",
-    });
-    const links = document.querySelectorAll(".nav-link");
+      behavior: 'smooth',
+    })
+    const links = document.querySelectorAll('.nav-link')
     links.forEach((link) => {
-      link.classList.remove("active");
-    });
-    e.currentTarget.classList.add("active");
-  };
+      link.classList.remove('active')
+    })
+    e.currentTarget.classList.add('active')
+  }
 
   return (
     <div className="w-full shadow-navbarShadow h-20 lg:h-[12vh] sticky top-0 z-50 bg-bodyColor px-4">
       <div className="max-w-container h-full mx-auto py-1 font-titleFont flex items-center justify-between">
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5 }}
-        >
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.5 }}>
           <Image width={200} height={200} src={logo} alt="logo" />
         </motion.div>
         <div className="hidden md:inline-flex items-center gap-7">
           <ul className="flex text-[18px] gap-7">
             <Link
-              href={"#home"}
+              href={'#home'}
               onClick={handleScroll}
               className="flex items-center font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link"
             >
@@ -61,7 +57,7 @@ const Navbar = () => {
               </motion.li>
             </Link>
             <Link
-              href={"#about"}
+              href={'#about'}
               onClick={handleScroll}
               className="flex items-center font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link"
             >
@@ -74,7 +70,7 @@ const Navbar = () => {
               </motion.li>
             </Link>
             <Link
-              href={"#skill"}
+              href={'#skill'}
               onClick={handleScroll}
               className="flex items-center font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link"
             >
@@ -87,7 +83,7 @@ const Navbar = () => {
               </motion.li>
             </Link>
             <Link
-              href={"#project"}
+              href={'#project'}
               onClick={handleScroll}
               className="flex items-center font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link"
             >
@@ -100,7 +96,7 @@ const Navbar = () => {
               </motion.li>
             </Link>
             <Link
-              href={"#contact"}
+              href={'#contact'}
               onClick={handleScroll}
               className="flex items-center gap-1 font-medium text-textDark hover:text-textGreen cursor-pointer duration-300 nav-link"
             >
@@ -113,10 +109,7 @@ const Navbar = () => {
               </motion.li>
             </Link>
           </ul>
-          <Link
-            href="https://drive.google.com/file/d/17KbveyAx-MJxlBLMdpBiDbq1OBTgorSG/view"
-            target="_blank"
-          >
+          <Link href="https://drive.google.com/file/d/17KbveyAx-MJxlBLMdpBiDbq1OBTgorSG/view" target="_blank">
             <motion.button
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -136,15 +129,10 @@ const Navbar = () => {
           <span className="w-full h-[2px] bg-textGreen inline-flex transform group-hover:translate-x-0 transition-all ease-in-out duration-300"></span>
           <span className="w-full h-[2px] bg-textGreen inline-flex transform group-hover:translate-x-3 transition-all ease-in-out duration-300"></span>
         </div>
-        {showMenu && (
-          <Menu
-            handleScroll={handleScroll}
-            setShowMenu={() => setShowMenu(false)}
-          />
-        )}
+        {showMenu && <Menu handleScroll={handleScroll} setShowMenu={() => setShowMenu(false)} />}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

@@ -25,8 +25,19 @@ const defaultActiveItem = {
   SoftSkill: false,
 }
 
+const title = [
+  'Programming',
+  'Framework',
+  'Database',
+  'SoftwareDesign',
+  'ApiArchitecture',
+  'VersionControl',
+  'Cloud',
+  'SoftSkill',
+]
+
 const Skill = () => {
-  const [activeItems, setActiveItems] = useState({ ...defaultActiveItem, Programming: true })
+  const [activeItems, setActiveItems] = useState<any>({ ...defaultActiveItem, Programming: true })
 
   const handleChangeActiveItem = (name: string) => {
     setActiveItems({ ...defaultActiveItem, [name]: true })
@@ -37,78 +48,18 @@ const Skill = () => {
       <SectionTitle title="Some skills I have" titleNo="02" />
       <div className="w-full mt-10 flex flex-col md:flex-row gap-16">
         <ul className="md:w-2/5 flex flex-col">
-          <li
-            onClick={() => handleChangeActiveItem('Programming')}
-            className={clsx(
-              `border-l-2  text-textDark bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-4 font-medium`,
-              activeItems.Programming ? 'border-l-textGreen text-textGreen' : 'border-l-hoverColor',
-            )}
-          >
-            Programming
-          </li>
-          <li
-            onClick={() => handleChangeActiveItem('Framework')}
-            className={clsx(
-              `border-l-2  text-textDark bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-4 font-medium`,
-              activeItems.Framework ? 'border-l-textGreen text-textGreen' : 'border-l-hoverColor',
-            )}
-          >
-            Framework
-          </li>
-          <li
-            onClick={() => handleChangeActiveItem('Database')}
-            className={clsx(
-              `border-l-2  text-textDark bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-4 font-medium`,
-              activeItems.Database ? 'border-l-textGreen text-textGreen' : 'border-l-hoverColor',
-            )}
-          >
-            Databases
-          </li>
-          <li
-            onClick={() => handleChangeActiveItem('SoftwareDesign')}
-            className={clsx(
-              `border-l-2  text-textDark bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-4 font-medium`,
-              activeItems.SoftwareDesign ? 'border-l-textGreen text-textGreen' : 'border-l-hoverColor',
-            )}
-          >
-            Software Design
-          </li>
-          <li
-            onClick={() => handleChangeActiveItem('ApiArchitecture')}
-            className={clsx(
-              `border-l-2  text-textDark bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-4 font-medium`,
-              activeItems.ApiArchitecture ? 'border-l-textGreen text-textGreen' : 'border-l-hoverColor',
-            )}
-          >
-            API Architecture
-          </li>
-          <li
-            onClick={() => handleChangeActiveItem('VersionControl')}
-            className={clsx(
-              `border-l-2  text-textDark bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-4 font-medium`,
-              activeItems.VersionControl ? 'border-l-textGreen text-textGreen' : 'border-l-hoverColor',
-            )}
-          >
-            Version Control
-          </li>
-          <li
-            onClick={() => handleChangeActiveItem('Cloud')}
-            className={clsx(
-              `border-l-2  text-textDark bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-4 font-medium`,
-              activeItems.Cloud ? 'border-l-textGreen text-textGreen' : 'border-l-hoverColor',
-            )}
-          >
-            Cloud
-          </li>
-          <li
-            onClick={() => handleChangeActiveItem('SoftSkill')}
-            className={clsx(
-              `border-l-2  text-textDark bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-4 font-medium`,
-              activeItems.SoftSkill ? 'border-l-textGreen text-textGreen' : 'border-l-hoverColor',
-            )}
-          >
-            Soft Skills
-          </li>
+          {title.map((item: string, index: number) => (
+            <li
+              key={`${item}-${index}`}
+              onClick={() => handleChangeActiveItem(item)}
+              className={clsx(
+                `border-l-2  text-textDark bg-transparent hover:bg-[#112240] py-3 text-sm cursor-pointer duration-300 px-4 font-medium`,
+                activeItems[item] === true ? 'border-l-textGreen text-textGreen' : 'border-l-hoverColor',
+              )}
+            >
+              {item}
+            </li>
+          ))}
         </ul>
         {activeItems.Programming && <Programming />}
         {activeItems.Framework && <Framework />}
